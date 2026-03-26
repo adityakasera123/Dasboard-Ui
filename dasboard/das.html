@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    
     <link rel="stylesheet" href="das.css">
 </head>
 
@@ -35,42 +36,52 @@
             </div>
 
             <div id="card">
-                <div class="card">
+                <div class="card1">
                     <div id="card1">
                     <h3>$1,473,34.00</h3>
                     <h4>Currency</h4>
                       </div>
-                    <span class="i1"></span><i class="ri-arrow-up-s-fill"></i></span>
+                    <span id="icon1"><i class="ri-arrow-up-s-fill"></i></span>
                   
                 </div>
-                <div class="card">
+                <div class="card2">
                     <div id="card2">
-                    <h3>$1,921,384.00</h3>
-                    <h4>Currency</h4>
+                    <h3>15%</h3>
+                    <h4>Percentage</h4>
                      </div>
                     <span class="i2"><i class="ri-arrow-up-s-fill"></i></span>
                    
                 </div>
-                <div class="card">
+                <div class="card3">
                     <div id="card3">
-                    <h3>$1,121,194.00</h3>
-                    <h4>Currency</h4>
+                    <h3>74,186</h3>
+                    <h4>Number</h4>
                       </div>
-                    <span class="i3"><i class="ri-arrow-up-s-fill"></i></span>
+                    <span class="i3"><i class="ri-check-line"></i></span>
                     
                 </div>
-                <div class="card">
+                <div class="card4">
                     <div id="card4">
-                    <h3>$2,351,704.00</h3>
-                    <h4>Currency</h4>
+                    <h3>26/03/2026</h3>
+                    <h4>Date</h4>
                     </div>
                 
-                    <span class="i4"><i class="ri-arrow-up-s-fill"></i></span>
+                    <span class="i4"><i class="ri-error-warning-line"></i></span>
                     
                 </div>
             </div>
+            <div id="charts">
+            <div id="chart-section">
+                <canvas id="Canvas"> </canvas>
+            </div>
+            <div id="pie-chart">
+                <canvas id="PieChart"></canvas>
+            </div>
+            </div>
         </div>
     </div>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="das.js"></script>
 </body>
 
 </html>
