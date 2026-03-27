@@ -1,6 +1,7 @@
 const ctx = document.getElementById("Canvas").getContext("2d");
+const btn=document.querySelector("#buttonAdd");
 
-new Chart(ctx, {
+const myChart=new Chart(ctx, {
   type: "bar",
   data: {
     labels: ["Jan", "Feb", "Mar", "Apr", "May"],
@@ -22,7 +23,7 @@ new Chart(ctx, {
 
 const pie = document.getElementById("PieChart").getContext("2d");
 
-new Chart(pie, {
+const PieChart=new Chart(pie, {
   type: "pie",
   data: {
     labels: ["Red", "Blue", "Yellow", "Green"],
@@ -36,4 +37,30 @@ new Chart(pie, {
       ]
     }]
   }
+});
+
+
+btn.addEventListener("click", function() {
+
+  myChart.data.datasets[0].data = [
+    Math.floor(Math.random()*50),
+    Math.floor(Math.random()*50),
+    Math.floor(Math.random()*50),
+    Math.floor(Math.random()*50),
+    Math.floor(Math.random()*50)
+  ];
+
+  myChart.update();
+});
+btn.addEventListener("click", function() {
+
+  PieChart.data.datasets[0].data = [
+    Math.floor(Math.random()*50),
+    Math.floor(Math.random()*50),
+    Math.floor(Math.random()*50),
+    Math.floor(Math.random()*50),
+    Math.floor(Math.random()*50)
+  ];
+
+PieChart.update();
 });
